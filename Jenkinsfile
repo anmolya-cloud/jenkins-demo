@@ -25,7 +25,7 @@ pipeline {
 post {
 success {
    echo "Build success"
-     }
+         }
 failure {
     echo "Build Failed"}
 always {
