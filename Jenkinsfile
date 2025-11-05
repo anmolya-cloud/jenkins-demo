@@ -8,7 +8,7 @@
                 choice(name: 'DEPLOY_ENY', choices: ['staging', 'production'], description: 'Select deployment environment')
                        }
              stages {
-                   stage('Build') {
+                     stage('Build') {
                       steps {
                          echo"Building version ${version} for ${APP_ENV} environment"
                         }
