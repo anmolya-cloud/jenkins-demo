@@ -10,15 +10,18 @@
              stages {
                      stage('Build') {
                       steps {
-                         echo"Building version ${version} for ${APP_ENV} environment"
+                         echo"Building version ${VERSION} for ${APP_ENV} environment"
                         }
 
                }
                    stage('Test'){
+                    steps{
                     echo "Running Tests"
-                       }
+                       }}
                    stage("Deploy"){
-                    echo"Deploying to ${param.DEPLOY.ENV} environment"
+                    steps{
+                    echo"Deploying to ${param.DEPLOY_ENV} environment"
+                        }
                           }
              }
      }
