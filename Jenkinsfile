@@ -32,5 +32,5 @@ success {
 failure {
     echo "Build Failed"}
 always {
-   echo "Pipeline Completed (success or fail}"   
+   echo "Pipeline Completed (success or fail)}"   
 }
